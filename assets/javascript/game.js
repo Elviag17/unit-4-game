@@ -1,14 +1,15 @@
 $(document).ready(function () {
 
     var ranNum = 0;
-    var crystalOne = 0;
-    var crystalTwo = 0;
-    var crystalThree = 0;
-    var crystalFour = 0;
+    var drinkOne = 0;
+    var drinkTwo = 0;
+    var drinkThree = 0;
+    var drinkFour = 0;
     var sum = 0;
     var total = 0;
     var losses = 0;
     var wins = 0;
+
 
 
     // Generates number to guess
@@ -17,27 +18,27 @@ $(document).ready(function () {
         $("#random-number").text(ranNum);
     }
 
-    //Random numbers for crystals
-    function crystalNumOne() {
-        crystalOne = Math.floor((Math.random() * 11) + 1);
-        $("#image1").attr("value", crystalOne);
+    //Random numbers for drink
+    function drinkNumOne() {
+        drinkOne = Math.floor((Math.random() * 11) + 1);
+        $("#image1").attr("value", drinkOne);
         console.log($("#image1").attr("value"));
 
     }
-    function crystalNumTwo() {
-        crystalTwo = Math.floor((Math.random() * 12) + 1);
-        $("#image2").attr("value", crystalTwo);
+    function drinkNumTwo() {
+        drinkTwo = Math.floor((Math.random() * 12) + 1);
+        $("#image2").attr("value", drinkTwo);
         console.log($("#image2").attr("value"));
     }
-    function crystalNumThree() {
-        crystalThree = Math.floor((Math.random() * 11) + 1);
-        $("#image3").attr("value", crystalThree);
+    function drinkNumThree() {
+        drinkThree = Math.floor((Math.random() * 11) + 1);
+        $("#image3").attr("value", drinkThree);
         console.log($("#image3").attr("value"));
     }
 
-    function crystalNumFour() {
-        crystalFour = Math.floor((Math.random() * 11) + 1);
-        $("#image4").attr("value", crystalFour);
+    function drinkNumFour() {
+        drinkFour = Math.floor((Math.random() * 11) + 1);
+        $("#image4").attr("value", drinkFour);
         console.log($("#image4").attr("value"));
 
     }
@@ -47,12 +48,13 @@ $(document).ready(function () {
         total = 0;
         totalScore();
         generateNum();
-        crystalNumOne();
-        crystalNumTwo();
-        crystalNumThree();
-        crystalNumFour();
+        drinkNumOne();
+        drinkNumTwo();
+        drinkNumThree();
+        drinkNumFour();
 
     }
+
 
     //Writes into html the updated losses
     function totalLosses() {
@@ -96,6 +98,6 @@ $(document).ready(function () {
 
 
     })
-
+    
 
 });
