@@ -1,0 +1,55 @@
+
+body {background-image: url("../../assets/images/background.png");
+}
+
+.img {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}
+
+.card{
+    background-color:#DEB9E3;
+}
+
+.left{
+    -webkit-animation-name: left;
+    -webkit-animation-duration: 7s;
+
+
+}
+
+.right{
+    -webkit-animation-name: right;
+    -webkit-animation-duration: 7s;
+
+
+}
+@-webkit-keyframes left{
+    0%   {background-color: #8B84CB; left:0px; top:0px;}
+    25%  {background-color:#DEB9E3; left:200px; top:0px;}
+    50%  {background-color: #8B84CB; left:0px; top:0px;}
+    75%  {background-color:#DEB9E3; left:200px; top:0px;}
+    100% {background-color: #8B84CB; left:0px; top:0px;}
+}
+
+@-webkit-keyframes right{
+    0%   {background-color: #8B84CB; right:0px; top:0px;}
+    25%  {background-color:#DEB9E3; right:200px; top:0px;}
+    50%  {background-color: #8B84CB; right:0px; top:0px;}
+    75%  {background-color:#DEB9E3; right:200px; top:0px;}
+    100% {background-color: #8B84CB; right:0px; top:0px;}
+}
+
+.title {
+    animation: blinker 2s linear infinite;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Fascinate Inline', cursive;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
